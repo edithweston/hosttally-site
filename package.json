@@ -1,0 +1,6 @@
+{
+  "name": "hosttally-site",
+  "private": true,
+  "scripts": { "build": "node build/build.js" },
+  "devDependencies": { "html-minifier-terser": "7.2.0" }
+}

@@ -1,0 +1,32 @@
+# HostTally
+
+> HostTally is an Airbnb accounts app for UK hosts, made and hosted by HostFactor (hostfactor.co.uk). It tracks holiday let and short-term rental expenses, receipts, bills, Airbnb bookings and income, and exports UK tax year records for accountants. Try it free, then £9.99 a month.
+
+## What it does
+- Airbnb expense tracker: log welcome packs, toiletries, laundry, cleaning products, linen and towels, replacement items, repairs and maintenance, vehicle fuel and custom categories, each filed against a property and guest stay.
+- Receipts: photograph a receipt, or record an expense with no receipt and get a dated expense record.
+- Airbnb integration: import bookings from the Airbnb calendar (iCal link) as guest stays; import the Airbnb earnings CSV to fill in the payout for each stay. HostTally is independent and not affiliated with Airbnb.
+- Bills: electricity, gas, water, broadband, council tax, insurance, TV licence, service charge and custom monthly or yearly bills, with a copy (photo or PDF) of each bill and a month-by-month view that shows missing bills.
+- Year at a glance per property: income, expenditure, profit, bills, nights booked, occupancy and cost per night.
+- Accountant exports: Excel spreadsheet or PDF pack for a month, a guest stay, a calendar year or the UK tax year (6 April to 5 April), including receipt photos and bill copies.
+- Email reminders for missing bills and upcoming renewals.
+- Works on iPhone, Android, iPad, Mac and Windows PC in the web browser; syncs between devices; nothing to install.
+- Data kept on HostFactor's UK servers with daily backups.
+
+## Who it is for
+UK Airbnb hosts, holiday let owners, serviced accommodation operators and small short-term rental businesses who want simple bookkeeping and accountant-ready records. Other countries are available on request.
+
+## What it does not do
+It does not file tax returns or submit to HMRC. It keeps records and produces reports for an accountant or for the host's own Self Assessment.
+
+## Price
+Free trial, then £9.99 per month for all properties.
+
+## Links
+- Home: https://hosttally.co.uk/
+- Help guide: https://hosttally.co.uk/help.html
+- Live demo: https://hosttally.co.uk/app/?demo=1
+- Sign in: https://hosttally.co.uk/app/
+- Contact: https://hosttally.co.uk/#contact (billing@hostfactor.co.uk)
+- Privacy: https://hosttally.co.uk/privacy.html
+- Terms: https://hosttally.co.uk/terms.html

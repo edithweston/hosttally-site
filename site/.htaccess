@@ -1,0 +1,34 @@
+# HostTally · hosttally.co.uk
+Options -Indexes
+DirectoryIndex index.php index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Always use https://hosttally.co.uk (no www)
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+
+  # Force HTTPS: once the padlock works on https://hosttally.co.uk, remove the # from the 2 lines below
+  #RewriteCond %{HTTPS} !=on
+  #RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # The home page is served by index.php
+  RewriteRule ^home\.html$ / [L,R=301]
+
+  # Old HostFactor addresses keep working
+  RewriteRule ^upkeep-ledger-help\.html$ /help.html [L,R=301]
+  RewriteRule ^hf-home\.(html|php)$ / [L,R=301]
+  RewriteRule ^new/upkeep/?(.*)$ /app/$1 [L,R=301,QSA]
+  RewriteRule ^new/(terms|privacy)\.html$ /$1.html [L,R=301]
+</IfModule>
+
+# Hide notes and deploy files from the web
+<FilesMatch "^(README.*|\.ftp-deploy-sync-state\.json)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>

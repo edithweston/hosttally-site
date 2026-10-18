@@ -1,0 +1,44 @@
+# HostTally
+Options -Indexes
+DirectoryIndex index.php index.html
+
+# Never serve the data folder (database, sessions, receipt photos)
+RedirectMatch 403 ^/?(.*/)?data(/.*)?$
+
+# Old links to index.html go to the always-fresh index.php
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^index\.html$ index.php [L,QSA]
+</IfModule>
+
+# Hide settings and notes from the web
+<FilesMatch "^(config\.php|README\.txt|app\.html)$">
+  Require all denied
+</FilesMatch>
+
+# Force HTTPS: once https:// works for your site, remove the # from the 5 lines below
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{HTTPS} !=on
+#  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "same-origin"
+  <FilesMatch "\.(html|webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# Never let server or plugin caches serve an old copy of the app
+<IfModule LiteSpeed>
+  CacheDisable public /
+  CacheDisable private /
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+  </FilesMatch>
+</IfModule>

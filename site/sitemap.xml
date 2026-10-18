@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://hosttally.co.uk/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://hosttally.co.uk/hosttally-airbnb-accounts-app-uk.png</image:loc>
+      <image:title>HostTally: the Airbnb accounts app for UK hosts</image:title>
+    </image:image>
+  </url>
+  <url><loc>https://hosttally.co.uk/help.html</loc><lastmod>2026-10-17</lastmod><priority>0.7</priority></url>
+  <url><loc>https://hosttally.co.uk/privacy.html</loc><priority>0.2</priority></url>
+  <url><loc>https://hosttally.co.uk/terms.html</loc><priority>0.2</priority></url>
+</urlset>
