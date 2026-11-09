@@ -53,7 +53,7 @@ if ((int)($_POST['elapsed'] ?? 0) < 3000) reply(true);
 session_start();
 $now = time();
 $_SESSION['hf_sent'] = array_values(array_filter($_SESSION['hf_sent'] ?? [], fn($t) => $t > $now - 3600));
-if (count($_SESSION['hf_sent']) >= 5) reply(false, 'You\'ve sent several messages already. Please email ' . $TO . ' directly instead.', 429);
+if (count($_SESSION['hf_sent']) >= 5) reply(false, 'You\'ve sent several messages already. Please try again a little later.', 429);
 
 $clean = fn($v, $max) => trim(substr(str_replace(["\r", "\0"], '', (string)$v), 0, $max));
 $name    = str_replace("\n", ' ', $clean($_POST['name'] ?? '', 100));
@@ -75,7 +75,7 @@ $subject = preg_match('/[^\x20-\x7E]/', $subject) ? '=?UTF-8?B?' . base64_encode
 $headers = "From: HostFactor Website <$FROM>\r\nReply-To: $email\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit";
 
 if (!@mail($TO, $subject, $body, $headers, '-f' . $FROM)) {
-    reply(false, 'The message couldn\'t be sent right now. Please email ' . $TO . ' instead.', 500);
+    reply(false, 'The message couldn\'t be sent right now. Please try again in a few minutes.', 500);
 }
 $_SESSION['hf_sent'][] = $now;
 reply(true);

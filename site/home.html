@@ -27,7 +27,7 @@
 <meta name="twitter:image:alt" content="HostTally Airbnb accounts app for UK hosts">
 <link rel="alternate" type="text/plain" href="https://hosttally.co.uk/llms.txt" title="LLM summary">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "HostTally", "alternateName": "HostTally Airbnb accounts app", "url": "https://hosttally.co.uk/", "image": "https://hosttally.co.uk/hosttally-airbnb-accounts-app-uk.png", "applicationCategory": "FinanceApplication", "applicationSubCategory": "Bookkeeping and expense tracking for Airbnb and holiday lets", "operatingSystem": "iOS, Android, macOS, Windows, Web browser", "inLanguage": "en-GB", "areaServed": "GB", "description": "HostTally is the Airbnb accounts app for UK hosts. Track holiday let expenses, receipts, bills and Airbnb bookings, see profit per stay, and export tax-year Excel and PDF records for your accountant. Try it free, then £9.99 a month.", "featureList": ["Airbnb expense tracker", "Receipt photos and self-recorded expense records", "Airbnb calendar (iCal) booking import", "Airbnb earnings CSV import", "Income and profit per guest stay", "Monthly and yearly bills with copies", "UK tax year Excel and PDF exports for accountants", "Email reminders for missing bills", "Syncs iPhone, Android, Mac and PC"], "offers": {"@type": "Offer", "price": "9.99", "priceCurrency": "GBP", "description": "Free trial, then £9.99 per month", "category": "subscription"}, "publisher": {"@type": "Organization", "name": "HostFactor", "url": "https://hostfactor.co.uk/"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HostFactor", "url": "https://hostfactor.co.uk/", "logo": "https://hosttally.co.uk/favicon.svg", "email": "billing@hostfactor.co.uk", "areaServed": "GB", "description": "UK web hosting company and maker of HostTally, the Airbnb accounts app for UK hosts."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "HostFactor", "url": "https://hostfactor.co.uk/", "logo": "https://hosttally.co.uk/favicon.svg", "areaServed": "GB", "description": "UK web hosting company and maker of HostTally, the Airbnb accounts app for UK hosts."}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "HostTally", "url": "https://hosttally.co.uk/", "inLanguage": "en-GB"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is HostTally?", "acceptedAnswer": {"@type": "Answer", "text": "HostTally is an Airbnb accounts app for UK hosts. It keeps every holiday let expense, receipt, bill and booking in one place, works out income and profit per stay, and exports tidy Excel and PDF records for your accountant or your own Self Assessment."}}, {"@type": "Question", "name": "Is there an app for Airbnb accounts in the UK?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. HostTally is built for UK Airbnb and holiday-let hosts: it uses pounds sterling and the UK tax year (6 April to 5 April), tracks short-term rental expenses by property and guest stay, and produces accountant-ready records."}}, {"@type": "Question", "name": "What holiday let expenses can I track?", "acceptedAnswer": {"@type": "Answer", "text": "Welcome packs, toiletries, laundry, cleaning products, linen and towels, replacement items, repairs and maintenance, vehicle fuel and anything else you add. Bills such as electricity, gas, water, broadband, council tax, insurance, TV licence and service charges are tracked separately, with a copy of each bill."}}, {"@type": "Question", "name": "Does HostTally work with Airbnb?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Paste your Airbnb calendar (iCal) link and bookings appear as guest stays automatically. You can also import your Airbnb earnings CSV to fill in the payout for each stay. HostTally is independent and is not affiliated with Airbnb."}}, {"@type": "Question", "name": "Can my accountant use the exports?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Choose a month, a guest stay, a calendar year or the UK tax year and download an Excel spreadsheet or a PDF pack with every expense, receipt photo, bill and the income and profit for each stay."}}, {"@type": "Question", "name": "Does it file my tax return or submit to HMRC?", "acceptedAnswer": {"@type": "Answer", "text": "No. HostTally keeps your records and produces reports. Your accountant, or the software you use for Self Assessment, does the filing."}}, {"@type": "Question", "name": "Which devices does it work on?", "acceptedAnswer": {"@type": "Answer", "text": "iPhone, Android, iPad, Mac and Windows PC. It runs in your web browser, so there is nothing to install, and it syncs between your phone and computer."}}, {"@type": "Question", "name": "How much does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "Try it free, then £9.99 a month for all your properties. That is barely an hour's rental."}}, {"@type": "Question", "name": "Where is my data kept?", "acceptedAnswer": {"@type": "Answer", "text": "On HostFactor's UK servers, with daily backups. Each account is private."}}, {"@type": "Question", "name": "I host outside the UK. Can I use it?", "acceptedAnswer": {"@type": "Answer", "text": "HostTally is set up for UK Airbnb hosts, and other countries are available. Contact us and tell us where you host."}}]}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -61,6 +61,41 @@ a{color:#1E6670}a:hover{color:#14505A}
 .ul-ticker:hover .ul-ticker-in{animation-play-state:paused}
 @media (max-width:760px){.ul-hide-sm{display:none !important}.ul-navlinks{display:none !important}}
 @media (prefers-reduced-motion:reduce){.ul-float,.ul-pop,.ul-glow,.ul-marquee,.ul-fill,.ul-tick,.ul-ticker-in{animation:none !important}}
+.qf{flex:1.4 1 440px;background:#FFFFFF;color:#16262D;border:1px solid #DCE6E8;box-shadow:0 24px 50px rgba(15,61,68,.08);border-radius:26px;padding:clamp(22px,4vw,36px);display:flex;flex-direction:column;gap:4px;position:relative;box-sizing:border-box;min-width:0}
+.qf [hidden]{display:none !important}
+.qf-prog{display:flex;flex-direction:column;gap:8px;padding-bottom:6px}
+.qf-prog-txt{display:flex;justify-content:space-between;font-size:13px;font-weight:700;color:#5B6B78}
+.qf-bar{height:8px;border-radius:4px;background:#E6ECF0;overflow:hidden}
+.qf-fill{height:8px;width:0;border-radius:4px;background:linear-gradient(90deg,#1E6670,#7FD3C4);transition:width .45s cubic-bezier(.2,.8,.2,1)}
+.qf-hp{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.qf-step{border-bottom:1px solid #E6ECF0}.qf-step:last-of-type{border-bottom:0}
+.qf-head{font:inherit;width:100%;background:none;border:0;padding:16px 0;display:flex;align-items:center;gap:14px;text-align:left;cursor:pointer;color:#16262D}
+.qf-head:disabled{cursor:default}
+.qf-badge{width:34px;height:34px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;background:#E6ECF0;color:#5B6B78;transition:background .3s,color .3s}
+.qf-step.is-open .qf-badge{background:#16262D;color:#FFFFFF}
+.qf-step.is-done .qf-badge{background:#1E6670;color:#FFFFFF}
+.qf-ht{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}.qf-ht b{font-size:18px}
+.qf-sum{font-size:14px;color:#5B6B78}
+.qf-panel{display:flex;flex-direction:column;gap:14px;padding:0 0 18px;animation:qfOpen .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes qfOpen{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+.qf-field{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px;animation:qfOpen .3s ease}
+.qf-lbl small,.qf-opt{font-weight:500;color:#5B6B78}
+.qf input,.qf select,.qf textarea{font:inherit;font-weight:400;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid #CBD5DD;background:#FFFFFF;color:#16262D;width:100%;box-sizing:border-box}
+.qf textarea{resize:vertical}
+.qf input:focus,.qf select:focus,.qf textarea:focus{outline:2px solid #7FD3C4;outline-offset:1px;border-color:#1E6670}
+.qf-chips{display:flex;flex-wrap:wrap;gap:8px}
+.qf-chips button{font:inherit;font-size:15px;font-weight:600;padding:10px 14px;min-height:44px;border-radius:999px;cursor:pointer;border:2px solid #DDE5EA;background:#FFFFFF;color:#3E4F5C;transition:all .2s}
+.qf-chips button[aria-pressed="true"]{border-color:#1E6670;background:#E9FBF5;color:#16262D}
+.qf-next{font:inherit;font-weight:800;font-size:16px;background:#16262D;color:#FFFFFF;border:0;padding:14px 20px;min-height:44px;border-radius:12px;cursor:pointer;align-self:flex-start}
+.qf-send{font:inherit;font-weight:800;font-size:17px;background:#F0B64A;color:#1B1405;border:0;padding:15px;min-height:48px;border-radius:12px;cursor:pointer}
+.qf-next:disabled,.qf-send:disabled{opacity:.4;cursor:not-allowed}
+.qf-hint{font-size:13px;color:#5B6B78}.qf-hint.bad{color:#B3362B}
+.qf-err{font-size:14px;color:#B3362B;font-weight:600}
+.qf-done{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:24px 0;font-size:16px;line-height:1.6;color:#3E4F5C}
+.qf-tick{width:56px;height:56px;border-radius:50%;background:#E9FBF5;display:flex;align-items:center;justify-content:center}
+.qf-thanks{font-family:'Bricolage Grotesque',sans-serif;font-size:26px;color:#16262D;outline:none}
+.qf-link{font:inherit;font-weight:700;background:none;border:0;color:#1E6670;padding:0;cursor:pointer}
+@media (prefers-reduced-motion:reduce){.qf-panel,.qf-field{animation:none}.qf-fill{transition:none}}
 </style>
 </head>
 <body>
@@ -406,31 +441,90 @@ a{color:#1E6670}a:hover{color:#14505A}
       <h2 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(34px, 4.4vw, 54px); line-height: 1.04; letter-spacing: -0.025em; margin: 12px 0 0">Talk to a real person.</h2>
       <p style="font-size: 18px; line-height: 1.6; color: #5E7179; margin: 16px 0 0">Questions about the free trial, hosting outside the UK, help with your account, or an app of your own: send us a message and we'll get back to you.</p>
       <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 26px; font-weight: 600">
-        <span style="display: flex; gap: 12px; align-items: center"><span style="width: 40px; height: 40px; border-radius: 12px; background: #E1F1EC; display: grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6670" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="M4 7l8 6 8-6"></path></svg></span>billing@hostfactor.co.uk</span>
+        <span style="display: flex; gap: 12px; align-items: center"><span style="width: 40px; height: 40px; border-radius: 12px; background: #E1F1EC; display: grid; place-items: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1E6670" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 01-11.6 7.1L4 21l1.9-5.4A8 8 0 1121 12z"></path></svg></span>Three quick steps, and a real person replies</span>
       </div>
     </div>
-    <form id="contactForm" style="position: relative; flex: 1.4 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #DCE6E8; border-radius: 26px; padding: clamp(22px, 4vw, 36px); display: flex; flex-direction: column; gap: 16px; box-shadow: 0 24px 50px rgba(15,61,68,.08)" action="contact.php" method="post" novalidate="">
-      <div style="position: absolute; left: -9999px" aria-hidden="true"><label for="cWeb">Leave empty</label><input id="cWeb" name="website" type="text" tabindex="-1" autocomplete="off"><label for="cFax">Fax number</label><input id="cFax" name="fax_number" type="text" tabindex="-1" autocomplete="off"></div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
-        <div style="display: flex; flex-direction: column; gap: 7px"><label for="cName" style="font-size: 14px; font-weight: 700; color: #16262D">Name</label><input id="cName" name="name" type="text" autocomplete="name" required="" placeholder="Your name" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #16262D; background: #F3F6F4; border: 1.5px solid #DCE6E8; border-radius: 12px; padding: 13px 14px"></div>
-        <div style="display: flex; flex-direction: column; gap: 7px"><label for="cTel" style="font-size: 14px; font-weight: 700; color: #16262D">Telephone</label><input id="cTel" name="tel" type="tel" autocomplete="tel" placeholder="07…" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #16262D; background: #F3F6F4; border: 1.5px solid #DCE6E8; border-radius: 12px; padding: 13px 14px"></div>
+    <form id="qf" class="qf" action="contact.php" method="post" novalidate>
+      <div class="qf-done" id="qfDone" hidden>
+        <span class="qf-tick"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1E6670" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg></span>
+        <b class="qf-thanks" id="qfThanks" tabindex="-1">Thanks!</b>
+        <span>Your message is with us. A real person will read it and reply to you soon.</span>
+        <button type="button" class="qf-link" id="qfAgain">Send another message</button>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 7px"><label for="cEmail" style="font-size: 14px; font-weight: 700; color: #16262D">Email</label><input id="cEmail" name="email" type="email" autocomplete="email" required="" placeholder="you@example.com" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #16262D; background: #F3F6F4; border: 1.5px solid #DCE6E8; border-radius: 12px; padding: 13px 14px"></div>
-      <div style="display: flex; flex-direction: column; gap: 7px"><label for="cTopic" style="font-size: 14px; font-weight: 700; color: #16262D">What's it about?</label>
-        <select id="cTopic" name="topic" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #16262D; background: #F3F6F4; border: 1.5px solid #DCE6E8; border-radius: 12px; padding: 13px 14px; appearance: auto">
-          <option>General question</option>
-          <option>Free trial and getting started</option>
-          <option>Hosting outside the UK (other countries)</option>
-          <option>Help with my account</option>
-          <option>Accountant exports</option>
-          <option>Hosting with HostFactor</option>
-          <option>Build an app for me</option>
-        </select>
+
+      <div id="qfMain">
+        <div class="qf-prog">
+          <div class="qf-prog-txt"><span id="qfStepTxt">Step 1 of 3</span><span id="qfPctTxt">0% complete</span></div>
+          <div class="qf-bar" role="progressbar" aria-label="Form progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="qfBar"><div class="qf-fill" id="qfFill"></div></div>
+        </div>
+
+        <!-- Spam traps: people never see these; bots fill them in -->
+        <div class="qf-hp" aria-hidden="true">
+          <label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+          <label>Fax number <input type="text" name="fax_number" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <section class="qf-step" data-step="1">
+          <button type="button" class="qf-head" data-go="1" aria-expanded="true" aria-controls="qfP1">
+            <span class="qf-badge">1</span>
+            <span class="qf-ht"><b>What's it about?</b><span class="qf-sum" data-default="Free trial, your account, exports, apps…">Free trial, your account, exports, apps…</span></span>
+          </button>
+          <div class="qf-panel" id="qfP1">
+            <div class="qf-chips" data-chips="topic" role="group" aria-label="What's it about?">
+              <button type="button" data-val="Free trial and getting started">Free trial &amp; getting started</button>
+              <button type="button" data-val="Help with my account">Help with my account</button>
+              <button type="button" data-val="Accountant exports">Accountant exports</button>
+              <button type="button" data-val="Hosting outside the UK (other countries)">Lets outside the UK</button>
+              <button type="button" data-val="Hosting with HostFactor">Website hosting</button>
+              <button type="button" data-val="Build an app for me">Build an app for me</button>
+              <button type="button" data-val="General question">Something else</button>
+            </div>
+            <div class="qf-field" data-show="trial" hidden>
+              <span class="qf-lbl" id="lLets">How many holiday lets do you have?</span>
+              <div class="qf-chips" data-chips="lets" role="group" aria-labelledby="lLets"><button type="button" data-val="1">1</button><button type="button" data-val="2 to 3">2 to 3</button><button type="button" data-val="4 or more">4 or more</button></div>
+            </div>
+            <label class="qf-field" data-show="abroad" hidden>Which country are your lets in?<input type="text" name="country" placeholder="e.g. Spain"></label>
+            <label class="qf-field" data-show="account" hidden>The email you signed up with<input type="email" name="acctEmail" autocomplete="email"></label>
+            <label class="qf-field" data-show="exports" hidden>Which tax year?<select name="taxYear"><option value="">Choose…</option><option>2025/26</option><option>2026/27</option><option>Not sure</option></select></label>
+            <label class="qf-field" data-show="hosting" hidden><span>Your website <span class="qf-opt">(if you have one)</span></span><input type="text" name="siteUrl" placeholder="yourbusiness.co.uk" inputmode="url"></label>
+            <div class="qf-field" data-show="app" hidden>
+              <span class="qf-lbl" id="lPlat">Where should the app run? <small>(pick any)</small></span>
+              <div class="qf-chips" data-chips="plats" data-multi="1" role="group" aria-labelledby="lPlat"><button type="button" data-val="iPhone">iPhone</button><button type="button" data-val="Android">Android</button><button type="button" data-val="Web">Web</button></div>
+            </div>
+            <button type="button" class="qf-next" data-next="2" disabled>Continue</button>
+          </div>
+        </section>
+
+        <section class="qf-step" data-step="2">
+          <button type="button" class="qf-head" data-go="2" aria-expanded="false" aria-controls="qfP2">
+            <span class="qf-badge">2</span>
+            <span class="qf-ht"><b>Your message</b><span class="qf-sum" data-default="Tell us how we can help">Tell us how we can help</span></span>
+          </button>
+          <div class="qf-panel" id="qfP2" hidden>
+            <label class="qf-field"><span id="qfMsgLbl">How can we help?</span><textarea name="message" rows="5" placeholder="Write as much or as little as you like"></textarea></label>
+            <button type="button" class="qf-next" data-next="3" disabled>Continue</button>
+          </div>
+        </section>
+
+        <section class="qf-step" data-step="3">
+          <button type="button" class="qf-head" data-go="3" aria-expanded="false" aria-controls="qfP3">
+            <span class="qf-badge">3</span>
+            <span class="qf-ht"><b>Your details</b><span class="qf-sum" data-default="So we can reply to you">So we can reply to you</span></span>
+          </button>
+          <div class="qf-panel" id="qfP3" hidden>
+            <label class="qf-field">Your name<input type="text" name="name" autocomplete="name"></label>
+            <label class="qf-field">Email<input type="email" name="email" autocomplete="email"></label>
+            <div class="qf-field">
+              <span class="qf-lbl" id="lHow">How should we reply?</span>
+              <div class="qf-chips" data-chips="contact" role="group" aria-labelledby="lHow"><button type="button" data-val="Email" aria-pressed="true">Email</button><button type="button" data-val="Phone">Phone call</button></div>
+            </div>
+            <label class="qf-field"><span>Phone number <span class="qf-opt" id="qfTelOpt">(optional)</span></span><input type="tel" name="tel" autocomplete="tel" inputmode="tel"></label>
+            <span class="qf-hint" id="qfHint" aria-live="polite">We only use your details to reply to you. See our <a href="/privacy.html">privacy notice</a>.</span>
+            <span class="qf-err" id="qfErr" role="alert" hidden></span>
+            <button type="submit" class="qf-send" id="qfSend" disabled>Send message</button>
+          </div>
+        </section>
       </div>
-      <div style="display: flex; flex-direction: column; gap: 7px"><label for="cMsg" style="font-size: 14px; font-weight: 700; color: #16262D">Message</label><textarea id="cMsg" name="message" rows="5" required="" placeholder="How can we help?" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #16262D; background: #F3F6F4; border: 1.5px solid #DCE6E8; border-radius: 12px; padding: 13px 14px; resize: vertical; min-height: 130px"></textarea></div>
-      <button class="ul-btn" type="submit" style="align-self: flex-start; border: 0; background: #1E6670; color: #FFFFFF; font: inherit; font-weight: 800; font-size: 17px; padding: 16px 28px; border-radius: 14px; cursor: pointer">Send message</button>
-      <p id="cStatus" role="status" style="margin: 0; font-weight: 600"></p>
-      <p style="margin: 0; font-size: 13px; color: #5E7179">We only use your details to reply to you. See our <a href="/privacy.html">privacy notice</a>.</p>
     </form>
   </div>
 </section>
@@ -450,7 +544,7 @@ a{color:#1E6670}a:hover{color:#14505A}
   <div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; font-size: 14px">
     <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 18px; color: #FFFFFF">Host<span style="color: #F0B64A">Tally</span></span>
     <div style="display: flex; flex-wrap: wrap; gap: 22px"><a href="#features" style="color: #A9C6C9; text-decoration: none">Features</a><a href="#pricing" style="color: #A9C6C9; text-decoration: none">Pricing</a><a href="#hosting" style="color: #A9C6C9; text-decoration: none">Hosting</a><a href="help.html" style="color: #A9C6C9; text-decoration: none">Help guide</a><a href="/privacy.html" style="color: #A9C6C9; text-decoration: none">Privacy</a><a href="/terms.html" style="color: #A9C6C9; text-decoration: none">Terms</a><a href="#contact" style="color: #A9C6C9; text-decoration: none">Contact</a></div>
-    <span>© 2026 ConradClaude&amp;Co. · HostFactor</span>
+    <span>© HostTally 2026 · part of HostFactor</span>
   </div>
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 28px; font-size: 12px; color: #7FA0A5">HostTally is an Airbnb accounts and holiday let expense app for UK hosts, made by HostFactor. Airbnb is a trademark of Airbnb, Inc. HostTally is independent and not affiliated with or endorsed by Airbnb.</div>
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 24px 26px; display: flex; justify-content: flex-end; align-items: center; gap: 7px; font-size: 10.5px; color: #7FA0A5">
@@ -460,25 +554,87 @@ a{color:#1E6670}a:hover{color:#14505A}
 </footer>
 </div>
 <script>
-var T0=Date.now();
 (function(){
-  var f=document.getElementById("contactForm"),st=document.getElementById("cStatus"),sel=document.getElementById("cTopic");
-  document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[data-topic]");if(!a)return;sel.value=a.getAttribute("data-topic");setTimeout(function(){document.getElementById("cName").focus({preventScroll:true})},450)});
-  f.addEventListener("submit",function(e){
-    e.preventDefault();
-    var name=f.elements.name.value.trim(),email=f.elements.email.value.trim(),msg=f.elements.message.value.trim();
-    st.style.color="#B3362B";
-    if(!name){st.textContent="Please add your name.";f.elements.name.focus();return}
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){st.textContent="Please enter a valid email address.";f.elements.email.focus();return}
-    if(!msg){st.textContent="Please write a short message.";f.elements.message.focus();return}
-    var b=f.querySelector("button[type=submit]");b.disabled=true;b.textContent="Sending…";st.textContent="";
-    var fd=new FormData(f);fd.append("hf_js","ok-"+T0.toString(36));fd.append("elapsed",String(Date.now()-T0));
-    fetch("contact.php",{method:"POST",body:fd,cache:"no-store"}).then(function(r){return r.json().catch(function(){return {ok:false}})}).then(function(j){
-      if(j&&j.ok){st.style.color="#1E6670";st.textContent="Thanks "+name.split(" ")[0]+"! Your message is on its way. We'll reply to "+email+".";f.reset()}
-      else{st.textContent=(j&&j.error)||"Sorry, that didn't send. Please email billing@hostfactor.co.uk."}
-    }).catch(function(){st.textContent="Sorry, that didn't send. Check your connection, or email billing@hostfactor.co.uk."})
-    .then(function(){b.disabled=false;b.textContent="Send message"});
+  var f=document.getElementById('qf');if(!f)return;
+  var t0=Date.now(),step=1,maxStep=1;
+  var fresh=function(){return{topic:'',lets:'',plats:[],contact:'Email'}};var v=fresh();
+  var $=function(s){return f.querySelector(s)},$$=function(s){return Array.prototype.slice.call(f.querySelectorAll(s))};
+  var val=function(n){var el=f.elements[n];return el?String(el.value||'').trim():''};
+  var emailOk=function(x){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(x)};
+  function flags(){var t=v.topic;return{trial:t==='Free trial and getting started',abroad:t==='Hosting outside the UK (other countries)',account:t==='Help with my account',exports:t==='Accountant exports',hosting:t==='Hosting with HostFactor',app:t==='Build an app for me'}}
+  function ok(n){
+    var g=flags();
+    if(n===1)return !!v.topic&&(!g.trial||!!v.lets)&&(!g.abroad||val('country').length>1)&&(!g.app||v.plats.length>0);
+    if(n===2)return val('message').length>4;
+    return val('name').length>1&&emailOk(val('email'))&&(v.contact!=='Phone'||val('tel').replace(/\D/g,'').length>9);
+  }
+  var prompts={'Free trial and getting started':'Anything you\'d like to know before you start?','Help with my account':'What\'s happening? Tell us what you were trying to do.','Accountant exports':'What do you or your accountant need?','Hosting outside the UK (other countries)':'Tell us a little about your lets','Hosting with HostFactor':'What do you need for your website?','Build an app for me':'Tell us your app idea','General question':'How can we help?'};
+  function render(){
+    var g=flags();
+    $$('[data-show]').forEach(function(el){el.hidden=!g[el.getAttribute('data-show')]});
+    $$('[data-chips]').forEach(function(box){var k=box.getAttribute('data-chips');
+      Array.prototype.forEach.call(box.querySelectorAll('button'),function(b){var x=b.getAttribute('data-val');var on=Array.isArray(v[k])?v[k].indexOf(x)>=0:v[k]===x;b.setAttribute('aria-pressed',on?'true':'false')})});
+    $('#qfMsgLbl').textContent=prompts[v.topic]||'How can we help?';
+    $$('.qf-step').forEach(function(sec){
+      var n=+sec.getAttribute('data-step'),open=n===step,done=n<maxStep&&!open;
+      sec.classList.toggle('is-open',open);sec.classList.toggle('is-done',done);
+      sec.querySelector('.qf-panel').hidden=!open;
+      var h=sec.querySelector('.qf-head');h.setAttribute('aria-expanded',open?'true':'false');h.disabled=n>maxStep;
+      sec.querySelector('.qf-badge').textContent=done?'✓':String(n);
+      var sum=sec.querySelector('.qf-sum'),txt=sum.getAttribute('data-default');
+      if(n===1&&v.topic){var c=f.querySelector('[data-chips="topic"] [data-val="'+v.topic.replace(/"/g,'\\"')+'"]');txt=c?c.textContent:v.topic}
+      if(n===2&&maxStep>2&&val('message')){var m=val('message');txt=m.length>60?m.slice(0,57)+'…':m}
+      sum.textContent=txt;
+    });
+    $('[data-next="2"]').disabled=!ok(1);$('[data-next="3"]').disabled=!ok(2);$('#qfSend').disabled=!ok(3);
+    var pct=Math.round((maxStep-1)/3*100);
+    $('#qfFill').style.width=pct+'%';$('#qfBar').setAttribute('aria-valuenow',pct);
+    $('#qfStepTxt').textContent='Step '+step+' of 3';$('#qfPctTxt').textContent=pct+'% complete';
+    $('#qfTelOpt').textContent=v.contact==='Phone'?'(needed to call you)':'(optional)';
+    var hint=$('#qfHint');
+    if(val('email')&&!emailOk(val('email'))){hint.textContent='Please check your email address.';hint.classList.add('bad')}
+    else if(hint.classList.contains('bad')){hint.innerHTML='We only use your details to reply to you. See our <a href="/privacy.html">privacy notice</a>.';hint.classList.remove('bad')}
+  }
+  function go(n,noFocus){if(n<=maxStep){step=n;render();if(!noFocus&&n>1){var p=f.querySelector('[data-step="'+n+'"] .qf-panel');var el=p&&p.querySelector('textarea,input,select');if(el)el.focus({preventScroll:true})}}}
+  f.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b||!f.contains(b))return;
+    var box=b.closest('[data-chips]');
+    if(box){var k=box.getAttribute('data-chips'),x=b.getAttribute('data-val');
+      if(box.getAttribute('data-multi')){var i=v[k].indexOf(x);if(i>=0)v[k].splice(i,1);else v[k].push(x)}else v[k]=x;render();return}
+    if(b.hasAttribute('data-go')){go(+b.getAttribute('data-go'));return}
+    if(b.hasAttribute('data-next')){var n=+b.getAttribute('data-next');if(ok(n-1)){maxStep=Math.max(maxStep,n);go(n)}}
   });
+  f.addEventListener('input',render);f.addEventListener('change',render);
+  // buttons elsewhere on the page ("Try it free", "Build an app"…) pick the topic for you
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[data-topic]');if(!a)return;v.topic=a.getAttribute('data-topic');step=1;render()});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();if(!ok(3))return;
+    var g=flags(),err=$('#qfErr'),btn=$('#qfSend');err.hidden=true;
+    var lines=[];
+    if(g.trial)lines.push('Holiday lets: '+v.lets);
+    if(g.abroad)lines.push('Country: '+val('country'));
+    if(g.account&&val('acctEmail'))lines.push('Signed up with: '+val('acctEmail'));
+    if(g.exports&&val('taxYear'))lines.push('Tax year: '+val('taxYear'));
+    if(g.hosting&&val('siteUrl'))lines.push('Website: '+val('siteUrl'));
+    if(g.app)lines.push('App platforms: '+v.plats.join(', '));
+    lines.push('Reply by: '+(v.contact==='Phone'?'phone call':'email'));
+    var fd=new FormData();
+    fd.append('name',val('name'));fd.append('email',val('email'));fd.append('tel',val('tel'));fd.append('topic',v.topic);
+    fd.append('message',val('message')+'\n\n'+lines.join('\n'));
+    fd.append('website',val('website'));fd.append('fax_number',val('fax_number'));
+    fd.append('hf_js','ok-'+t0.toString(36));fd.append('elapsed',String(Date.now()-t0));
+    btn.disabled=true;btn.textContent='Sending…';
+    fetch(f.getAttribute('action'),{method:'POST',body:fd,cache:'no-store'}).then(function(r){return r.json().catch(function(){return{ok:false}})}).then(function(r){
+      if(!r||!r.ok)throw new Error(r&&r.error||'');
+      maxStep=4;$('#qfFill').style.width='100%';$('#qfMain').hidden=true;$('#qfDone').hidden=false;
+      var fn=val('name').split(' ')[0];$('#qfThanks').textContent='Thanks'+(fn?', '+fn:'')+'!';$('#qfThanks').focus();
+    }).catch(function(x){
+      err.textContent=(x&&x.message)||'Sorry, that didn\'t send. Please check your connection and try again in a minute.';err.hidden=false;
+      btn.textContent='Send message';btn.disabled=!ok(3);
+    });
+  });
+  $('#qfAgain').addEventListener('click',function(){v=fresh();f.reset();step=1;maxStep=1;t0=Date.now();$('#qfDone').hidden=true;$('#qfMain').hidden=false;$('#qfSend').textContent='Send message';render()});
+  render();
 })();
 </script>
 </body>

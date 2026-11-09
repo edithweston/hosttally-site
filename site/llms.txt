@@ -27,6 +27,6 @@ Free trial, then £9.99 per month for all properties.
 - Help guide: https://hosttally.co.uk/help.html
 - Live demo: https://hosttally.co.uk/app/?demo=1
 - Sign in: https://hosttally.co.uk/app/
-- Contact: https://hosttally.co.uk/#contact (billing@hostfactor.co.uk)
+- Contact: https://hosttally.co.uk/#contact
 - Privacy: https://hosttally.co.uk/privacy.html
 - Terms: https://hosttally.co.uk/terms.html
