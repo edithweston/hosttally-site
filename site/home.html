@@ -410,7 +410,7 @@ a{color:#1E6670}a:hover{color:#14505A}
       </div>
     </div>
     <form id="contactForm" style="position: relative; flex: 1.4 1 440px; min-width: 0; background: #FFFFFF; border: 1px solid #DCE6E8; border-radius: 26px; padding: clamp(22px, 4vw, 36px); display: flex; flex-direction: column; gap: 16px; box-shadow: 0 24px 50px rgba(15,61,68,.08)" action="contact.php" method="post" novalidate="">
-      <div style="position: absolute; left: -9999px" aria-hidden="true"><label for="cWeb">Leave empty</label><input id="cWeb" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div style="position: absolute; left: -9999px" aria-hidden="true"><label for="cWeb">Leave empty</label><input id="cWeb" name="website" type="text" tabindex="-1" autocomplete="off"><label for="cFax">Fax number</label><input id="cFax" name="fax_number" type="text" tabindex="-1" autocomplete="off"></div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px">
         <div style="display: flex; flex-direction: column; gap: 7px"><label for="cName" style="font-size: 14px; font-weight: 700; color: #16262D">Name</label><input id="cName" name="name" type="text" autocomplete="name" required="" placeholder="Your name" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #16262D; background: #F3F6F4; border: 1.5px solid #DCE6E8; border-radius: 12px; padding: 13px 14px"></div>
         <div style="display: flex; flex-direction: column; gap: 7px"><label for="cTel" style="font-size: 14px; font-weight: 700; color: #16262D">Telephone</label><input id="cTel" name="tel" type="tel" autocomplete="tel" placeholder="07…" style="width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; color: #16262D; background: #F3F6F4; border: 1.5px solid #DCE6E8; border-radius: 12px; padding: 13px 14px"></div>
@@ -460,6 +460,7 @@ a{color:#1E6670}a:hover{color:#14505A}
 </footer>
 </div>
 <script>
+var T0=Date.now();
 (function(){
   var f=document.getElementById("contactForm"),st=document.getElementById("cStatus"),sel=document.getElementById("cTopic");
   document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[data-topic]");if(!a)return;sel.value=a.getAttribute("data-topic");setTimeout(function(){document.getElementById("cName").focus({preventScroll:true})},450)});
@@ -471,7 +472,8 @@ a{color:#1E6670}a:hover{color:#14505A}
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){st.textContent="Please enter a valid email address.";f.elements.email.focus();return}
     if(!msg){st.textContent="Please write a short message.";f.elements.message.focus();return}
     var b=f.querySelector("button[type=submit]");b.disabled=true;b.textContent="Sending…";st.textContent="";
-    fetch("contact.php",{method:"POST",body:new FormData(f),cache:"no-store"}).then(function(r){return r.json().catch(function(){return {ok:false}})}).then(function(j){
+    var fd=new FormData(f);fd.append("hf_js","ok-"+T0.toString(36));fd.append("elapsed",String(Date.now()-T0));
+    fetch("contact.php",{method:"POST",body:fd,cache:"no-store"}).then(function(r){return r.json().catch(function(){return {ok:false}})}).then(function(j){
       if(j&&j.ok){st.style.color="#1E6670";st.textContent="Thanks "+name.split(" ")[0]+"! Your message is on its way. We'll reply to "+email+".";f.reset()}
       else{st.textContent=(j&&j.error)||"Sorry, that didn't send. Please email billing@hostfactor.co.uk."}
     }).catch(function(){st.textContent="Sorry, that didn't send. Check your connection, or email billing@hostfactor.co.uk."})
